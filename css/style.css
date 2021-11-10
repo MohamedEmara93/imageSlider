@@ -1,0 +1,82 @@
+body{
+   position: relative;
+   background-color: #f1f1f1;
+   padding: 2rem;
+}
+
+h1{
+    color: #fff;
+    display: inline-block;
+    background-color: red;
+}
+
+.item{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+img{
+    border-radius: 30px;
+}
+
+.item .content{
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+    left: 10%;
+    right: 10%;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: translateY(200px);
+    transition: transform .3s ease;
+}
+
+.item:hover .content{
+    transform: translateY(0);    
+}
+
+.content h3{
+    color: #b16262;
+}
+
+.content p{
+    color: #8b8b8b;
+}
+
+.lay-out{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.lightBox{
+    height: 70vh;
+    background:  url(../imgs/img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lightBox .icon{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.lightBox #exit{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
